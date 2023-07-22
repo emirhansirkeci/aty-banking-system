@@ -1,0 +1,19 @@
+.bordertext-main {
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  font-size: 0.75rem;
+  margin-left: -1rem;
+}
+
+.border-self {
+  width: 30px;
+  height: 2px;
+  background: #1f1f1f;
+  margin-right: 0.75rem;
+  opacity: 0.2;
+}
+
+.border-text {
+  text-transform: uppercase;
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "type": "from",
+    "from": "Shacc Niquel",
+    "amount": 100
+  },
+  {
+    "id": 2,
+    "type": "to",
+    "from": "Shacc Niquel",
+    "amount": 1000
+  },
+  {
+    "id": 3,
+    "type": "from",
+    "from": "Alli Gulli",
+    "amount": 1200
+  },
+  {
+    "id": 4,
+    "type": "to",
+    "from": "Shacc Niquel",
+    "amount": 2500
+  },
+  {
+    "id": 1,
+    "type": "from",
+    "from": "Gustavo Lewis",
+    "amount": 100
+  },
+  {
+    "id": 2,
+    "type": "to",
+    "from": "Gustavo Lewis",
+    "amount": 1000
+  },
+  {
+    "id": 3,
+    "type": "from",
+    "from": "Alli Gulli",
+    "amount": 1200
+  },
+  {
+    "id": 4,
+    "type": "to",
+    "from": "Shacc Niquel",
+    "amount": 2500
+  }
+]

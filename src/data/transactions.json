@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "type": "withdraw",
+    "from": "Gustavo Lewis",
+    "amount": 100
+  },
+  {
+    "id": 2,
+    "type": "deposit",
+    "from": "Gustavo Lewis",
+    "amount": 1000
+  },
+  {
+    "id": 3,
+    "type": "received",
+    "from": "Alli Gulli",
+    "amount": 1200
+  },
+  {
+    "id": 4,
+    "type": "transfer",
+    "from": "Shacc Niquel",
+    "amount": 2500
+  },
+  {
+    "id": 5,
+    "type": "withdraw",
+    "from": "Gustavo Lewis",
+    "amount": 100
+  },
+  {
+    "id": 6,
+    "type": "deposit",
+    "from": "Gustavo Lewis",
+    "amount": 1000
+  },
+  {
+    "id": 7,
+    "type": "received",
+    "from": "Alli Gulli",
+    "amount": 1200
+  },
+  {
+    "id": 8,
+    "type": "transfer",
+    "from": "Shacc Niquel",
+    "amount": 2500
+  },
+  {
+    "id": 9,
+    "type": "transfer",
+    "from": "Shacc Niquel",
+    "amount": 2500
+  },
+  {
+    "id": 10,
+    "type": "transfer",
+    "from": "Alli Gulli",
+    "amount": 7500
+  }
+]

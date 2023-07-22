@@ -1,0 +1,65 @@
+.card {
+  width: 180px;
+  height: 96px;
+  color: #fff;
+  border-radius: 10px;
+  background: #1f1f1f;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 600 !important;
+  display: inline-block;
+}
+
+.card .bank-name {
+  font-size: 12px;
+  display: flex;
+  justify-content: end;
+}
+
+.card .card-info .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 111px;
+}
+
+.card .card-info .bottom {
+  display: flex;
+  line-height: 10px;
+  justify-content: space-between;
+}
+
+.card .card-owner {
+  font-size: 10px;
+}
+
+.card .card-expiration {
+  font-size: 6px;
+  opacity: 0.7;
+}
+
+.card .card-number {
+  font-size: 12px;
+}
+
+.card .card-logo {
+  display: flex;
+}
+
+.card .card-logo .card-white {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100px;
+  margin-left: -4.8px;
+}
+
+.card .card-logo .card-gray {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 100px;
+}

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://localhost:5173/settings -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Banking System_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Banking System_files/css2" rel="stylesheet">
+  <style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/assets/App.css">html {
+  font-family: poppins;
+}
+
+body {
+  background-image: url("/src/images/temp-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.main {
+  width: 90vw;
+  height: 800px;
+  border-radius: 30px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+@media screen and (max-width: 1366px) {
+  .main {
+    width: 98vw;
+  }
+}
+
+@media screen and (max-width: 1525px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 10px !important;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/assets/reset.css">html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/components/Card.css">.card {
+  width: 180px;
+  height: 96px;
+  color: #fff;
+  border-radius: 10px;
+  background: #1f1f1f;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 600 !important;
+  display: inline-block;
+}
+
+.card .bank-name {
+  font-size: 12px;
+  display: flex;
+  justify-content: end;
+}
+
+.card .card-info .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 111px;
+}
+
+.card .card-info .bottom {
+  display: flex;
+  line-height: 10px;
+  justify-content: space-between;
+}
+
+.card .card-owner {
+  font-size: 10px;
+}
+
+.card .card-expiration {
+  font-size: 6px;
+  opacity: 0.7;
+}
+
+.card .card-number {
+  font-size: 12px;
+}
+
+.card .card-logo {
+  display: flex;
+}
+
+.card .card-logo .card-white {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 100px;
+  margin-left: -4.8px;
+}
+
+.card .card-logo .card-gray {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  opacity: 0.5;
+  border-radius: 100px;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/components/Header.css">.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #d1d1d1;
+  height: 120px;
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+
+.header .menu-name {
+  color: #1f1f1f;
+  text-shadow: 0px 4px 10px 0px rgba(31, 31, 31, 0.2);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.header .logo img {
+  padding-top: 1.5rem;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/components/BorderText.css">.bordertext-main {
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  font-size: 0.75rem;
+  margin-left: -1rem;
+}
+
+.border-self {
+  width: 30px;
+  height: 2px;
+  background: #1f1f1f;
+  margin-right: 0.75rem;
+  opacity: 0.2;
+}
+
+.border-text {
+  text-transform: uppercase;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/components/SideBar.css">.sidebar {
+  padding-left: 1rem;
+  font-weight: 700;
+  height: 600px; /**delete later*/
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.info .info-name {
+  font-size: 2rem;
+}
+
+.info .info-money {
+  font-size: 1.5rem;
+  opacity: 0.5;
+  line-height: 10px;
+}
+
+.navigate {
+  margin-top: 3rem;
+}
+
+.navigate .navigate-paths a {
+  position: relative;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  text-decoration: none;
+  display: flex; /* look here or delete if any bugs occurs */
+}
+
+.navigate .path {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.navigate .path img {
+  margin-right: 0.5rem;
+  width: 25px;
+}
+
+.exit {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  margin-top: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.exit img {
+  width: 25px;
+  margin-right: 0.5rem;
+}
+
+.exit div {
+  display: flex;
+  align-items: center;
+}
+
+.exit .exit-text {
+  cursor: pointer;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -17px;
+  padding: 1.5rem 8rem;
+  border-left: 5px solid #1f1f1f;
+  background: rgb(31, 31, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  opacity: 0.2;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -17px;
+  padding: 1.5rem 0.2rem;
+  background: #1f1f1f;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/pages/Dashboard.css">.dashboard {
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid rgba(150, 150, 150, 0.1);
+  background: #eaeaea;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05) inset;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  width: 78%;
+}
+
+.tx-wrapper {
+  line-height: 25px;
+  margin-top: 1rem;
+  max-height: 500px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.tx-wrapper::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.tx-section {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.tx-wrapper .tx-section {
+  margin-top: 1rem;
+}
+
+.tx-wrapper .tx-info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.tx-wrapper .tx-type {
+  opacity: 0.5;
+}
+
+.tx-wrapper .tx-type::first-letter {
+  text-transform: uppercase;
+}
+
+.tx-wrapper .tx-name {
+  font-size: 1.5rem;
+}
+
+.st-wrapper:first-of-type {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.st-section {
+  padding: 1rem 0 2rem 0;
+}
+
+.st-wrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.st-wrapper .st-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.st-wrapper .st-type {
+  font-size: 1.5rem;
+}
+
+.st-wrapper .st-week {
+  font-size: 1;
+  opacity: 0.5;
+}
+
+/* TEST */
+.scaled-card {
+  margin-top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-right {
+  position: relative;
+}
+
+@media screen and (max-width: 1024px) {
+  .st-wrapper {
+    margin-top: 0.5rem;
+  }
+
+  .tx-wrapper .tx-info {
+    padding-bottom: 0;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/components/Box.css">.box {
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid rgba(150, 150, 150, 0.5);
+  background: #eaeaea;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.box-text {
+  position: absolute;
+  top: -1.5rem;
+  left: 2.5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/pages/Transfer.css">.transfer {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  background: #eaeaea;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+.transfer .styled-button {
+  margin-top: 1rem;
+}
+
+.transfer-left-section {
+  width: 50%;
+}
+
+.transfer-left-section .box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.transfer-right-section {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.send-money {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.send-money .styled-input-wrapper {
+  margin-top: 1rem;
+}
+
+.send-money .button {
+  width: 100%;
+}
+
+.transfer .box {
+  padding: 1rem 1.5rem;
+}
+
+/* LAST TRANSACTIONS */
+
+.last-tx-text {
+  margin-top: 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.last-tx-wrapper {
+  max-height: 225px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.last-tx-wrapper::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.tx-section {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.last-tx-wrapper .tx-section {
+  margin-top: 1rem;
+}
+
+.last-tx-wrapper .tx-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last-tx-wrapper .tx-type {
+  font-size: 0.75rem;
+  opacity: 0.5;
+  line-height: 5px;
+}
+
+.last-tx-wrapper .tx-type::first-letter {
+  text-transform: uppercase;
+}
+
+.last-tx-wrapper .tx-name {
+  font-size: 1.25rem;
+}
+
+.last-last-tx-wrapper .tx-type::first-letter {
+  text-transform: uppercase;
+}
+
+/* Transfer Right Section */
+
+.transfer-right-section .box {
+  padding: 2rem 2.5rem;
+  display: flex;
+}
+
+.right-box-wrapper {
+  max-height: 300px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.right-box-wrapper::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.transfer-right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.withdraw-list-wrapper {
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.withdraw-list-wrapper label {
+  font-weight: 500;
+}
+
+.withdraw-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.withdraw-list:last-child {
+  border-bottom: none;
+}
+
+.withdraw-date {
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1366px) {
+  .main {
+    width: 98vw;
+  }
+
+  .withdraw-amount {
+    width: 55%;
+  }
+
+  .last-tx-wrapper {
+    max-height: 260px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .withdraw-amount {
+    width: 55%;
+  }
+
+  .transfer-right-section {
+    justify-content: start;
+  }
+
+  .transfer-right-section .box:last-child {
+    margin-top: 3rem;
+  }
+
+  .last-tx-wrapper {
+    max-height: 400px;
+  }
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/components/Button.css">.button-wrapper button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  cursor: pointer;
+  border-radius: 10px;
+  background: #1f1f1f;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  color: #eee;
+  width: 7rem;
+  height: 2rem;
+
+  color: #f2f2f2;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/components/StyledInput.css">.styled-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.styled-input-wrapper label {
+  color: rgba(31, 31, 31, 0.5);
+  font-size: 1rem;
+  font-family: Poppins;
+  font-weight: 500;
+  padding-left: 16px;
+}
+
+.styled-input {
+  border-radius: 10px;
+  border: 1px solid rgba(150, 150, 150, 0.1);
+  background: #eaeaea;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05) inset;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.styled-input:focus {
+  outline: none;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/pages/Bills.css">.bills-section {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  background: #eaeaea;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+.bills-left-section,
+.bills-right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+}
+
+.bills-left-section .box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem;
+}
+
+.bills-wrapper {
+  max-height: 210px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.bills-wrapper::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.bills-list {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.bills-wrapper .bills-list {
+  margin-top: 1rem;
+}
+
+.bills-wrapper .bills-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bills-wrapper .bills-type {
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+.bills-wrapper .bills-reason {
+  font-size: 1.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.bills-wrapper .bills-type::first-letter {
+  text-transform: uppercase;
+}
+
+.bills-pay {
+  display: flex;
+}
+
+.bills-pay button {
+  margin-left: 1rem;
+  width: auto;
+  padding: 0.5rem 1rem;
+}
+
+.bills-reason::first-letter,
+.bills-type::first-letter {
+  text-transform: uppercase;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/User/Desktop/aty-banking-system/src/pages/Settings.css">.settings-section {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  background: #eaeaea;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+.settings-left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.settings-section .change-iban-wrapper {
+  padding: 2rem;
+}
+
+.change-iban {
+  display: flex;
+}
+
+.change-iban .styled-input-wrapper:first-child {
+  margin-right: 1rem;
+}
+
+.change-iban-wrapper button {
+  margin-top: 1rem;
+}
+
+.confirm {
+  margin-top: 1rem;
+  color: #1f1f1f;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.settings-right-section {
+  width: 48%;
+}
+
+.settings-right-section .box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-card-section {
+  height: 100%;
+}
+
+input[type="radio"] {
+  appearance: none;
+  background: #d9d9d9;
+  border: 3px solid #d9d9d9;
+  width: 16px;
+  height: 16px;
+}
+
+input[type="radio"]:checked {
+  background: #333;
+}
+
+.new-card-section .box .scale-card {
+  transform: scale(2.5);
+}
+
+@media screen and (max-width: 1525px) {
+  .new-card-section .box .scale-card {
+    transform: scale(2);
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .new-card-section .box .scale-card {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .new-card-section .box .scale-card {
+    transform: scale(1.5);
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><div class="main"><header class="header"><div class="logo"><img src="./Banking System_files/aty-logo-dark.png"></div><div class="menu-name"><span>settings</span></div><div class="cards"><span class="card undefined"><div class="bank-name"><span>ATY BANK</span></div><div class="card-chip"><img src="./Banking System_files/card-chip.svg" width="16px"></div><div class="card-info"><div class="top"><span class="card-owner">Gustavo Lewis</span><span class="card-expiration">03/26</span></div><div><div></div></div><div class="bottom"><span class="card-number">**** **** **23 4567</span><div class="card-logo"><div class="card-gray"></div><div class="card-white"></div></div></div></div></span></div></header><div class="content"><aside class="sidebar"><div class="info"><div class="bordertext-main"><div class="border-self"></div><div class="border-text">information</div></div><div><div class="info-name">Gustavo Lewis</div><div class="info-money">$12.598</div></div></div><div class="navigate"><div class="bordertext-main"><div class="border-self"></div><div class="border-text">navigate</div></div><div class="navigate-paths"><a class="" href="http://localhost:5173/"><div class="path"><img src="./Banking System_files/dashboard-icon.svg"><div>DASHBOARD</div></div></a><a class="" href="http://localhost:5173/transfer"><div class="path"><img src="./Banking System_files/transfer-icon.svg"><div>TRANSFER</div></div></a><a class="" href="http://localhost:5173/bills"><div class="path"><img src="./Banking System_files/bills-icon.svg">BILLS</div></a><a class="active" href="http://localhost:5173/settings" aria-current="page"><div class="path"><img src="./Banking System_files/settings-icon.svg">SETTINGS</div></a></div></div><div class="exit"><div class="bordertext-main"><div class="border-self"></div><div class="border-text">exit</div></div><div class="exit-text"><img src="./Banking System_files/exit-icon.svg">EXIT</div></div></aside><div class="settings-section"><div class="settings-left-section"><div class="box" style="width: 100%;"><div class="box-text">Change Your Iban</div><div class="change-iban-wrapper"><div class="change-iban" style="
+    width: 100%;
+"><div class="styled-input-wrapper"><div><label>Old IBAN</label></div><input class="styled-input"></div><div class="styled-input-wrapper"><div><label>New IBAN</label></div><input class="styled-input"></div></div><div class="confirm"><input type="radio"> I confirm that i can’t take this action back</div><div class="button-wrapper"><button class="styled-button">Change</button></div></div></div><div class="box" style="width: 100%;"><div class="box-text">Change Your Pin</div><div class="change-iban-wrapper"><div class="change-iban"><div class="styled-input-wrapper"><div><label>Old PIN</label></div><input class="styled-input"></div><div class="styled-input-wrapper"><div><label>New PIN</label></div><input class="styled-input"></div></div><div class="confirm"><input type="radio"> I confirm that i can’t take this action back</div><div class="button-wrapper"><button class="styled-button">Change</button></div></div></div></div><div class="settings-right-section"><div class="new-card-section"><div class="box" style="width: 100%;"><div class="box-text"></div><div class="scale-card"><span class="card undefined"><div class="bank-name"><span>ATY BANK</span></div><div class="card-chip"><img src="./Banking System_files/card-chip.svg" width="16px"></div><div class="card-info"><div class="top"><span class="card-owner">Gustavo Lewis</span><span class="card-expiration">03/26</span></div><div><div></div></div><div class="bottom"><span class="card-number">**** **** **23 4567</span><div class="card-logo"><div class="card-gray"></div><div class="card-white"></div></div></div></div></span></div></div></div></div></div></div></div></div>
+    <script type="module" src="./Banking System_files/main.jsx"></script>
+  
+
+<div id="volume-booster-visusalizer">
+                    <div class="sound">
+                        <div class="sound-icon"></div>
+                        <div class="sound-wave sound-wave_one"></div>
+                        <div class="sound-wave sound-wave_two"></div>
+                        <div class="sound-wave sound-wave_three"></div>
+                    </div>
+                    <div class="segments-box">
+                        <div data-range="1-20" class="segment"><span></span></div>
+                        <div data-range="21-40" class="segment"><span></span></div>
+                        <div data-range="41-60" class="segment"><span></span></div>
+                        <div data-range="61-80" class="segment"><span></span></div>
+                        <div data-range="81-100" class="segment"><span></span></div>
+                    </div>
+                </div></body></html>

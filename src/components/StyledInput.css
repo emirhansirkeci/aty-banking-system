@@ -1,0 +1,26 @@
+.styled-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.styled-input-wrapper label {
+  color: rgba(31, 31, 31, 0.5);
+  font-size: 1rem;
+  font-family: Poppins;
+  font-weight: 500;
+  padding-left: 16px;
+}
+
+.styled-input {
+  border-radius: 10px;
+  border: 1px solid rgba(150, 150, 150, 0.1);
+  background: #eaeaea;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05) inset;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.styled-input:focus {
+  outline: none;
+}

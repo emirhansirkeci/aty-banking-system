@@ -1,0 +1,76 @@
+.bills-section {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  background: #eaeaea;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+.bills-left-section,
+.bills-right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+}
+
+.bills-left-section .box,
+.bills-right-section .box {
+  display: flex;
+  flex-direction: column;
+}
+
+.bills-wrapper {
+  max-height: 210px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.bills-wrapper::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.bills-list {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.bills-wrapper .bills-list {
+  margin-top: 1rem;
+}
+
+.bills-wrapper .bills-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bills-wrapper .bills-type {
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+.bills-wrapper .bills-reason {
+  font-size: 1.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.bills-wrapper .bills-type::first-letter {
+  text-transform: uppercase;
+}
+
+.bills-pay {
+  display: flex;
+}
+
+.bills-pay button {
+  margin-left: 1rem;
+  width: auto;
+  padding: 0.5rem 1rem;
+}
+
+.bills-reason::first-letter,
+.bills-type::first-letter {
+  text-transform: uppercase;
+}

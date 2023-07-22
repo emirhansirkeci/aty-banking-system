@@ -1,0 +1,96 @@
+.settings-section {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+  background: #eaeaea;
+  padding: 2rem;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05) inset;
+}
+
+.settings-left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.settings-section .change-iban-wrapper {
+  padding: 2rem;
+}
+
+.change-iban {
+  display: flex;
+}
+
+.change-iban .styled-input-wrapper:first-child {
+  margin-right: 1rem;
+}
+
+.change-iban-wrapper button {
+  margin-top: 1rem;
+}
+
+.confirm {
+  margin-top: 1rem;
+  color: #1f1f1f;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.settings-right-section {
+  width: 48%;
+}
+
+.settings-right-section .box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-card-section {
+  height: 100%;
+}
+
+input[type="radio"] {
+  appearance: none;
+  background: #d9d9d9;
+  border: 3px solid #d9d9d9;
+  width: 16px;
+  height: 16px;
+}
+
+input[type="radio"]:checked {
+  background: #333;
+}
+
+.new-card-section .box .scale-card {
+  transform: scale(2.5);
+}
+
+@media screen and (max-width: 1525px) {
+  .new-card-section .box .scale-card {
+    transform: scale(2);
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .new-card-section .box .scale-card {
+    transform: scale(1.5);
+  }
+
+  .change-iban {
+    flex-direction: column;
+  }
+
+  .change-iban .styled-input-wrapper:last-child {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .new-card-section .box .scale-card {
+    transform: scale(1.5);
+  }
+}

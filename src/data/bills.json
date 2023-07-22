@@ -1,0 +1,42 @@
+[
+  {
+    "reason": "Speeding",
+    "from": "Jashua Daniel",
+    "amount": 1000
+  },
+  {
+    "reason": "Failure to Heed a Stop Warning",
+    "from": "Mike Sam",
+    "amount": 1000
+  },
+  {
+    "reason": "speeding",
+    "from": "Mike Sam",
+    "amount": 1000
+  },
+  {
+    "reason": "speeding",
+    "from": "Jashua Daniel",
+    "amount": 1000
+  },
+  {
+    "reason": "Speeding",
+    "from": "Jashua Daniel",
+    "amount": 1000
+  },
+  {
+    "reason": "Failure to Heed a Stop Warning",
+    "from": "Mike Sam",
+    "amount": 1000
+  },
+  {
+    "reason": "speeding",
+    "from": "Mike Sam",
+    "amount": 1000
+  },
+  {
+    "reason": "speeding",
+    "from": "Jashua Daniel",
+    "amount": 1000
+  }
+]
