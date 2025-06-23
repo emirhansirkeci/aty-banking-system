@@ -9,11 +9,12 @@ This project is a **banking system interface** developed for **GTA 5 servers**. 
 - ⚛️ React 18
 - ⚡ Vite
 - 🌐 React Router DOM v6
-- 📁 Page structure under `pages/` folder
 
 ## Routing Structure
 
-The application consists of the following main routes:
+All page components are located in the `src/pages/` folder.  
+
+The application includes the following main routes:
 
 - `/` – Dashboard
 - `/transfer` – Money transfer
