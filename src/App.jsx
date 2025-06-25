@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./assets/App.css";
 import "./assets/reset.css";
 
-import Header from "./components/header";
+import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 
 import Dashboard from "./pages/Dashboard";
