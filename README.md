@@ -4,7 +4,6 @@ This project is a **banking system interface** developed for **GTA 5 servers**. 
 
 > ⚠️ **Note:** This UI is **not designed for mobile devices**. Since GTA 5 is only played on desktop, the layout is optimized for desktop use only.
 
-## 📸 Preview
 Below are screenshots of key pages from the ATY Banking System UI.
 
 <table>
