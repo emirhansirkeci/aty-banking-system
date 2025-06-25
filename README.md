@@ -4,6 +4,21 @@ This project is a **banking system interface** developed for **GTA 5 servers**. 
 
 > ⚠️ **Note:** This UI is **not designed for mobile devices**. Since GTA 5 is only played on desktop, the layout is optimized for desktop use only.
 
+## 📸 Preview
+Below are screenshots of key pages from the ATY Banking System UI.
+
+<table>
+  <tr>
+    <td><img src="https://github.com/emirhansirkeci/aty-banking-system/blob/main/readme-assets/Dashboard.png"/></td>
+    <td><img src="https://github.com/emirhansirkeci/aty-banking-system/blob/main/readme-assets/Transfer.png"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/emirhansirkeci/aty-banking-system/blob/main/readme-assets/Bills.png"/></td>
+    <td><img src="https://github.com/emirhansirkeci/aty-banking-system/blob/main/readme-assets/Settings.png"/></td>
+  </tr>
+</table>
+
+
 ## Technologies Used
 
 - ⚛️ React 18
